@@ -43,3 +43,69 @@ nav a{
     background-color: white;
     padding: 0px;
 }
+
+.cicak,.tippek,.rolunk{
+    background-color:#ffbec4 ;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.szovegCicak,.szovegTippek,.szovegRolunk{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+.gombCicak,.gombTippek,.gombRolunk{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    display: grid;
+    place-items: center;
+    
+}
+.gombCicak a,.gombTippek a,.gombRolunk a{
+    text-decoration: none;
+    text-align: center;
+    color:white;
+    background-color: #ffbec4;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+   
+
+}
+
+
+/*telefon  nezet*/
+
+@media only screen and (max-width: 420px) {/* töréspont */
+    body {
+        width: 100%;
+    }
+    main {
+        font-size: 20px;
+        width: 100%;
+    
+  
+  }
+  nav li{
+    display: grid;
+    place-items: center;
+  }
+  nav ul{
+    grid-template-columns: 1fr;
+    padding: 0%;
+    
+  }
+  .cicak,.tippek,.rolunk{
+    grid-template-columns: 1fr;
+    display: grid;
+    place-items: center;
+  }
+  }
+  
