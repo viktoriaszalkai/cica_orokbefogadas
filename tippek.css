@@ -135,9 +135,11 @@ footer img{
     place-items: center;
   }
   .szovegBeszoktatas img{
-    border-radius: 15px;
+    border-radius: 20px;
     width: 280px;
     align-self: center;
     margin: 0px;
+    padding: 10px;
+    margin-bottom: 20px;
 }
   }
