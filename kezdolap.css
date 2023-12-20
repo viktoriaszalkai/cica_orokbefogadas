@@ -1,0 +1,45 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family:"Quicksand", serif;
+
+}
+main {
+  background-color: white;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 0;
+  
+}
+
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    list-style-type: none;
+    text-align: center;
+}
+nav li{
+ 
+    padding: 5px;
+
+}
+nav a{
+    text-decoration: none;
+    color: #ffbec4;
+   
+}
+.fejleckep img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    
+}
+.cim{
+    text-align: center;
+    color: #ffbec4;
+    background-color: white;
+    padding: 0px;
+}
