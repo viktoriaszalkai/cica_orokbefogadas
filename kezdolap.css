@@ -76,10 +76,33 @@ nav a{
     padding-left: 30px;
     padding-right: 30px;
     border-radius: 10px;
-   
-
+}
+.rolunk h2{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+.rolunk p{
+    margin-top: 5px;
 }
 
+/*box shadow*/
+.szovegCicak, .gombCicak, .gombTippek, .szovegTippek, .gombRolunk, .szovegRolunk, .gombCicak a, .gombTippek a, .gombRolunk a{
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+}
+footer{
+    text-align: right;
+    font-size: 14px;
+    padding: 0px;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+footer img{
+  width: 80px;
+  height: 50px;
+  padding: 0px 0px 0px 10px;
+}
 
 /*telefon  nezet*/
 
