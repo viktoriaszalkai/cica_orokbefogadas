@@ -12,7 +12,7 @@ body{
     font-family:"Quicksand", serif;
 }
 main {
-  background-color: white
+  background-color: white;
   /*background-color: white;*/
   width: 80%;
   max-width: 800px;
@@ -138,18 +138,13 @@ nav a{
   main {
       font-size: 16px;
       width: 100%;
-  
-
-}
-nav ul{
-  grid-template-columns: 1fr;
 }
 .kepek{
   grid-template-columns: 1fr 1fr;
   display: grid;
   place-items: center;
 }
-}
+
 
 @media only screen and (max-width: 431px) {/* töréspont */
   body {
@@ -172,5 +167,4 @@ nav ul{
   grid-template-columns: 1fr;
   display: grid;
   place-items: center;
-}
 }
