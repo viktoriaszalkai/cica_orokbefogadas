@@ -79,3 +79,33 @@ nav a{
    
 
 }
+
+
+/*telefon  nezet*/
+
+@media only screen and (max-width: 420px) {/* töréspont */
+    body {
+        width: 100%;
+    }
+    main {
+        font-size: 20px;
+        width: 100%;
+    
+  
+  }
+  nav li{
+    display: grid;
+    place-items: center;
+  }
+  nav ul{
+    grid-template-columns: 1fr;
+    padding: 0%;
+    
+  }
+  .cicak,.tippek,.rolunk{
+    grid-template-columns: 1fr;
+    display: grid;
+    place-items: center;
+  }
+  }
+  
