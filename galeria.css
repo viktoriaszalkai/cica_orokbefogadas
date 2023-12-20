@@ -17,6 +17,7 @@ main {
   max-width: 800px;
   margin: auto;
   margin-top: 0;
+  border-radius: 15px;
 }
 
 .cica {
@@ -104,6 +105,7 @@ nav ul{
   gap: 10px;
   list-style-type: none;
   text-align: center;
+  padding: 15px;
 }
 nav li{
 
