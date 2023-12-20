@@ -12,6 +12,11 @@ main {
   margin-top: 0;
   
 }
+article{
+    padding-top: 10px;
+    background-color: #ffbec4;
+    border-radius: 15px;
+}
 
 nav ul{
     display: grid;
@@ -21,19 +26,26 @@ nav ul{
     text-align: center;
 }
 nav li{
- 
     padding: 5px;
-
 }
 nav a{
     text-decoration: none;
     color: #ffbec4;
    
 }
+.szovegBeszoktatas img{
+    border-radius: 15px;
+    width: 280px;
+    align-self: center;
+    margin-left: 80px;
+}
 
-header h1{
+h1{
     text-align: center;
-    color: #ffbec4;
+    color: white;
+    font-size: 36px;
+    margin-top: 40px;
+    margin-bottom: 0px;
 }
 .beszerzes,.beszoktatas,.tablazat{
     background-color:#ffbec4 ;
@@ -48,6 +60,11 @@ header h1{
     border-radius: 20px;
     padding: 20px;
     margin: 20px;
+}
+.szovegBeszoktatas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px 20px 5px 20px;
 }
 .szovegBeszoktatas,.szovegBeszerzes,.tablazat,.tablazat table{
     box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
@@ -98,4 +115,23 @@ footer img{
   }
  
   }
-  
+  @media only screen and (max-width: 850px) {/* töréspont */
+    body {
+        width: 100%;
+    }
+    main {
+        font-size: 16px;
+        width: 100%;
+  }
+  .szovegBeszoktatas{
+    grid-template-columns: 1fr;
+    display: grid;
+    place-items: center;
+  }
+  .szovegBeszoktatas img{
+    border-radius: 15px;
+    width: 280px;
+    align-self: center;
+    margin: 0px;
+}
+  }
