@@ -34,6 +34,7 @@ nav ul {
   gap: 10px;
   list-style-type: none;
   text-align: center;
+  padding: 0;
 }
 nav li {
   padding: 5px;
@@ -42,7 +43,18 @@ nav a {
   text-decoration: none;
   color: #ffbec4;
 }
-
+.rolunkMenu{
+  border: 1px solid #ffbec4;
+  border-radius: 15px;
+  padding: 8px;
+}
+nav a:hover{
+  color: white;
+  background-color: #ffbec4;
+  border-radius: 15px;
+  padding: 8px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.25);
+}
 .adel img {
   border-radius: 15px;
   width: 280px;
