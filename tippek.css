@@ -20,7 +20,7 @@ article{
 /*menü*/
 nav ul{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
     list-style-type: none;
     text-align: center;
