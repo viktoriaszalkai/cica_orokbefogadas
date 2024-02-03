@@ -82,5 +82,8 @@ input{
     display: grid;
     place-items: center;
   }
+  .regisztracio{
+    place-items: center;
+  }
   }
   
