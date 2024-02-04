@@ -56,12 +56,24 @@ input{
     border: 0cap;
 }
 
+@media only screen and (max-width: 770px){
+  body {
+      width: 100%;
+  }
+  main {
+      font-size: 20px;
+      width: 100%;
+  .regisztracio{
+    padding-left: 100px;
+  }
+}
+
 
 @media only screen and (max-width: 420px) {/* töréspont */
-    body {
+  body {
         width: 100%;
-    }
-    main {
+  }
+  main {
         font-size: 16px;
         width: 100%;
   }
@@ -84,6 +96,6 @@ input{
   }
   .regisztracio{
     place-items: center;
+    padding-left: 50px;
   }
-  }
-  
+}
