@@ -20,7 +20,8 @@ nav ul{
     gap: 10px;
     list-style-type: none;
     text-align: center;
-    padding: 0;
+    padding-top: 20px;
+    padding-left: 0px;
 }
 nav li{
     padding: 5px;
@@ -32,7 +33,7 @@ nav a{
 nav a:hover{
     color: white;
     background-color: #ffbec4;
-    border-radius: 15px;
+    border-radius: 12px;
     padding: 8px;
     box-shadow: 0px 5px 10px rgba(0,0,0,0.25);
 }
@@ -51,7 +52,7 @@ footer img{
 }
 .kezdolapMenu, .cicainkMenu, .tippekMenu, .rolunkMenu, .regisztracioMenu{
     border: 1px solid #ffbec4;
-    border-radius: 15px;
+    border-radius: 12px;
     padding: 8px;
 }
 
@@ -359,14 +360,23 @@ tr:nth-child(odd) {
 
 /* REGISZTRACIO */
 .regisztracio{
+    
+    padding: 20px;
+    padding-left: 90px;
+}
+.regisztracioArticle{
     background-color:#ffbec4 ;
     border-radius: 20px;
-    padding: 20px;
-    
-}
 
+}
+.regisztracio2{
+    text-align: center;
+    background-color: #ffbec4;
+
+}
 .gomb{
     text-align: center;
+    padding-bottom:30px;
 }
 
 input{
