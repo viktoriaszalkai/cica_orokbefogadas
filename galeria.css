@@ -79,7 +79,7 @@ article{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: 1.7s;
+    transition: 1.7s; /*visszacsúszás gyorsasága*/
 }
 
 .cica:hover .cica-leiras{
