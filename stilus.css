@@ -353,11 +353,26 @@ tr:nth-child(odd) {
     padding: 20px;
     padding-left: 90px;
 }
-.regisztracioArticle{
+.regisztracioArticle, .orokbefogadasArticle{
     background-color:#ffbec4 ;
     border-radius: 20px;
+}
+.orokbefogadasArticle h2{
+    padding: 20px;
+    margin: 0;
+}
+.orokbefogadasArticle ul{
+    list-style-type: none;
+}
+.adatok_ul{
+    display: flex;
 
 }
+.adatok_ul>ul{
+    flex-direction: column;
+    flex: 0 0 50%;
+}
+
 .regisztracio2{
     text-align: center;
     background-color: #ffbec4;
