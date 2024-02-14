@@ -21,7 +21,7 @@
     <body>
         <main >
             <nav>
-                <ul>
+                <ul style="padding-top: 20px; margin-top: 16px; margin-bottom: 16px;">
                     <li><a href="index.html" class="kezdolapMenu">Kezdőlap</a></li>
                     <li><a href="galeria.html" class="cicainkMenu">Cicáink</a></li>
                     <li><a href="tippek.html" class="tippekMenu">Tippek</a></li>
@@ -29,14 +29,15 @@
                     <li><a href="regisztracio.html" class="regisztracioMenu">Regisztárció</a></li>
                 </ul>
             </nav>
-            <header>
+            <header class="regisztrácioHeader">
                 <div class="fejleckep"><img src="kepek/fejleckep.png" alt=""></div>
                 <div class="cim"><h1>CICAÖRÖM ÁLLATMENHELY</h1></div>
                 <h2 class="cim">Regisztráció</h2>
+                <p>Ha körülnéztél regisztálj, és indulhat is az örökbefogadás!</p>
             </header>
-            <article class="regisztracioArticle" >
+            <article class="regisztracioArticle row" >
                
-                <form action="#" method="get">
+                <form action="#" method="get" style="padding: 0px;">
                     <fieldset class="regisztracio row ">
                         <div class="szemelyes col-md-6">
                             <div class="mb-3 mt-3">
@@ -66,8 +67,15 @@
                                 <input type="text" id="utca" name="utca" size="30">
                             </div>
                         </div>
-                        
                         </fieldset> 
+                        <div class = "textarea col-md-12 row" style="justify-content: center">
+                            <div class="magadrolLabel col-md-12 ">
+                                <label for="rolad">Szeretnénk megismerni! </label>
+                            </div>
+                            <div class="magadrolArea col-md-12" ></div>
+                                <textarea class="area" name="rolad" style="width: 500px; text-align: center; " placeholder="Mesélj magadról!"></textarea>
+                            </div>
+                        </div>
                         <div class="gombRegisztralas">
                             <a href="#">Regisztráció</a>
                         </div> 
