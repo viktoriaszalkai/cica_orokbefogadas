@@ -1,0 +1,465 @@
+/* MINDEGYIKBEN SZEREPEL */
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family:"Quicksand", serif;
+
+}
+main {
+  background-color: white;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 0;
+  
+}
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    list-style-type: none;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 0px;
+}
+nav li{
+    padding: 5px;
+}
+nav a{
+    text-decoration: none;
+    color: #ffbec4;
+}
+nav a:hover{
+    color: white;
+    background-color: #ffbec4;
+    border-radius: 12px;
+    padding: 8px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.25);
+}
+footer{
+    text-align: right;
+    font-size: 14px;
+    padding: 0px;
+    padding-right: 10px;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+footer img{
+  width: 80px;
+  height: 50px;
+  padding: 0px 0px 0px 10px;
+}
+.kezdolapMenu, .cicainkMenu, .tippekMenu, .rolunkMenu, .regisztracioMenu{
+    border: 1px solid #ffbec4;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+
+/* KEZDOLAP */
+.fejleckep img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    
+}
+.cim{
+    text-align: center;
+    color: #ffbec4;
+    background-color: white;
+    padding: 0px;
+}
+
+.cicak,.tippek,.rolunk{
+    background-color:#ffbec4 ;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.szovegCicak,.szovegTippek,.szovegRolunk{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+.gombCicak,.gombTippek,.gombRolunk{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    display: grid;
+    place-items: center;
+    
+}
+.gombCicak a,.gombTippek a,.gombRolunk a, .gombRegisztralas a{
+    text-decoration: none;
+    text-align: center;
+    color:white;
+    background-color: #ffbec4;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+}
+.gombCicak a:hover, .gombTippek a:hover, .gombRolunk a:hover, .gombRegisztralas a:hover{
+    background-color: white;
+    color: #ffbec4;
+    border: 1px solid #ffbec4;
+    border-radius: 15px;
+}
+
+.rolunk h2{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+.rolunk p{
+    margin-top: 5px;
+}
+
+/*box shadow*/
+.szovegCicak, .gombCicak, .gombTippek, .szovegTippek, .gombRolunk, .szovegRolunk, .gombCicak a, .gombTippek a, .gombRolunk a, .gombRegisztralas a{
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+}
+
+/* GALERIA */
+.galeriaCim{
+    text-align: center;
+    color: white;
+    padding-top: 0px;
+    font-family:"Quicksand", serif;
+    font-weight: 800;
+    font-size: 36px;
+}
+
+.galeriaBody{
+    display: grid;
+    place-items: center;
+}
+
+.galeriaMain{
+    border-radius: 15px;
+}
+
+.galeriaNav{
+    background-color: white;
+}
+.galeriaNav ul{
+    margin:16px 0px 16px 0px;
+}
+.galeriaArticle{
+    background-color: #ffbec4;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-top: 30px;
+
+}
+
+.kepek {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding-left: 20px;
+    padding-right: 0px;
+    max-width: 800px;
+}
+
+.cica {
+    width: 220px;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.4);
+    border-radius: 20px;
+}
+
+.cica img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.cica-leiras{
+    width: 100%;
+    height: 101%; 
+    bottom:-101%;/*elcsúsztatja az alsó margót az eredet helyzetéhez képest*/
+    color: white;
+    position: absolute;
+    background-color: rgba(47, 32, 32, 0.411);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1.7s;
+}
+
+.cica:hover .cica-leiras{
+    bottom: 0; /*hovernél 0-ra állítja a az alsó margó eltolását*/
+}
+.cica-cim{
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    font-family: "Quicksand", serif;
+    -webkit-text-stroke: 1px black; /*szöveg border*/
+    padding: 0;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.cica ul{
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+    margin: 0px 20px 10px 20px;
+}
+
+.cica-p{    
+    margin: 0px 20px 10px 20px;
+}
+
+.galeriaFooter{
+    text-align: right;
+    font-size: 14px;
+    padding: 5px;
+    padding-right: 20px;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    background-color: #ffbec4;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:15px ;
+}
+
+.galeriaFooter p{
+    padding: 20px 0px 0px 0px;
+}
+
+/* TIPPEK */
+.tippekArticle{
+    padding-top: 10px;
+    background-color: #ffbec4;
+    border-radius: 15px;
+}
+.szovegBeszoktatas img{
+    border-radius: 15px;
+    width: 280px;
+    align-self: center;
+    margin-left: 80px;
+}
+.tippekArticle h1{
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.beszerzes,.beszoktatas,.tablazat{
+    background-color:#ffbec4 ;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.szovegBeszerzes,.szovegBeszoktatas{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+.szovegBeszoktatas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px 20px 5px 20px;
+}
+.szovegBeszoktatas,.szovegBeszerzes,.tablazat,.tablazat table{
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+}
+.tablazat{
+    text-align: center;
+    border-collapse:collapse;
+}
+table{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: white;
+}
+tr:nth-child(odd) {
+    background-color:#ffbec4;
+    
+}
+
+/* ROLUNK */
+.rolunkArticle{
+    padding-top: 10px;
+    background-color: #ffbec4;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-bottom: 20px;
+}
+.rolunkArticle h1{
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.rolunkArticle h2{
+    font-size: 26px;
+}
+
+
+.adel img, .viki img {
+    border-radius: 15px;
+    width: 280px;
+    align-self: center;
+    margin-left: 60px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+  
+.viki,.adel{
+    background-color: #ffffff;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    margin: 20px;
+}
+  
+.adel p,.adel h2, .viki p{
+      padding-left: 10px;
+}
+
+.rolunkFooter{
+    background-color: #ffbec4;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:15px ;
+}
+
+/* REGISZTRACIO */
+.regisztracio{
+    
+    padding: 20px;
+    padding-left: 90px;
+}
+.regisztracioArticle{
+    background-color:#ffbec4 ;
+    border-radius: 20px;
+
+}
+.regisztracio2{
+    text-align: center;
+    background-color: #ffbec4;
+
+}
+.gombRegisztralas{
+    text-align: center;
+    padding-bottom:40px;
+    
+}
+.gombRegisztralas a{
+    padding: 15px;
+}
+input{
+    border-radius: 8px;
+    border: 0cap;
+}
+
+/* TORESPONTOK */
+
+@media only screen and (max-width: 770px){
+    body {
+        width: 100%;
+    }
+    main {
+        font-size: 20px;
+        width: 100%;
+    }
+    nav{
+        font-size: 25px;
+      }
+
+   
+  .kepek{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    place-items: center;
+    padding: 0px;
+  }
+  .szovegBeszoktatas{
+    grid-template-columns: 1fr;
+    display: grid;
+    place-items: center;
+  }
+  .szovegBeszoktatas img{
+    border-radius: 20px;
+    width: 280px;
+    align-self: center;
+    margin: 0px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .adel, .viki {
+    grid-template-columns: 1fr;
+    display: grid;
+    place-items: center;
+  }
+  .adel img,.viki img {
+    border-radius: 15px;
+    width: 280px;
+    align-self: center;
+    margin: 0px;
+  }
+} 
+
+
+  @media only screen and (max-width: 420px){
+    body {
+        width: 100%;
+    }
+    main {
+        font-size: 16px;
+        width: 100%;
+    }
+    nav{
+      font-size: 15px;
+    }
+    h1{
+    font-size: 30px;
+    }
+    nav li{
+    display: grid;
+    place-items: center;
+    }
+    nav ul{
+    grid-template-columns: 1fr;
+    padding: 0%;
+    }
+    .kepek{
+        grid-template-columns: 1fr;
+        display: grid;
+        place-items: center;
+    }
+    .cicak,.tippek,.rolunk{
+    grid-template-columns: 1fr;
+    display: grid;
+    place-items: center;
+    }
+    .regisztracio{
+        place-items: center;
+        padding-left: 50px;
+    }
+  }
+  
