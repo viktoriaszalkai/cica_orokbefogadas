@@ -489,11 +489,16 @@ input{
         padding-left: 50px;
     }
     .area{
-        max-width: 80%;
+        max-width: 85%;
+        width: 330px;
     }
     .area2{
         max-width: 100%;
         padding: 0px;
+        width: 330px;
+    }
+    .magadrolArea{
+        padding: 25px;
     }
   }
   
@@ -506,7 +511,7 @@ input{
         place-items: center ;
         padding-left: 35px;
     }
-    .textarea{
+    .area{
         padding: 30px;
     }
   }
