@@ -445,7 +445,7 @@ input{
 } 
 
 
-  @media only screen and (max-width: 420px){
+  @media only screen and (max-width: 440px){
     body {
         width: 100%;
     }
@@ -477,11 +477,12 @@ input{
     display: grid;
     place-items: center;
     }
-    .regisztracio, .regisztracioGombok{
+    .regisztracio{
         place-items: center;
         padding-left: 50px;
     }
     .regisztracioGombok {
+        place-items: center ;
         padding-left: 55px;
     }
     .textarea{
