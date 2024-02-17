@@ -353,7 +353,7 @@ tr:nth-child(odd) {
     padding: 20px;
     padding-left: 90px;
 }
-.area{
+.area, .area2{
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
     border: 0cap;
@@ -488,8 +488,12 @@ input{
         place-items: center ;
         padding-left: 50px;
     }
-    .textarea{
-        padding: 30px;
+    .area{
+        max-width: 80%;
+    }
+    .area2{
+        max-width: 100%;
+        padding: 0px;
     }
   }
   
