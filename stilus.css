@@ -348,7 +348,7 @@ tr:nth-child(odd) {
 }
 
 /* REGISZTRACIO */
-.regisztracio{
+.regisztracio, .regisztracioGombok{
     
     padding: 20px;
     padding-left: 90px;
@@ -386,6 +386,10 @@ input{
     border-radius: 8px;
     border: 0cap;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
+.number{
+    background-color: #ffbec400;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0);
 }
 
 /* TORESPONTOK */
@@ -434,6 +438,10 @@ input{
     align-self: center;
     margin: 0px;
   }
+  .regisztracioGombok{
+    padding-left: 250px;
+    gap: 20px;
+  }
 } 
 
 
@@ -469,9 +477,12 @@ input{
     display: grid;
     place-items: center;
     }
-    .regisztracio{
+    .regisztracio, .regisztracioGombok{
         place-items: center;
-        padding-left: 50px;
+        padding-left: 55px;
+    }
+    .textarea{
+        padding: 30px;
     }
   }
   
