@@ -479,6 +479,9 @@ input{
     }
     .regisztracio, .regisztracioGombok{
         place-items: center;
+        padding-left: 50px;
+    }
+    .regisztracioGombok {
         padding-left: 55px;
     }
     .textarea{
