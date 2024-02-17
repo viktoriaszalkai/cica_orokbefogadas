@@ -477,6 +477,10 @@ input{
     display: grid;
     place-items: center;
     }
+    .regisztracioArticle{
+        margin: 5px;
+        padding: 5px;
+    }
     .regisztracio{
         place-items: center;
         padding-left: 45px;
