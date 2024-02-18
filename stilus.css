@@ -501,6 +501,9 @@ input{
     padding-left: 90px;
     padding-right: 90px;
 }
+.regisztracioP{
+    text-align: center;
+}
 /* TORESPONTOK */
 @media only screen and (max-width: 1000px){
     .orokbefogadasKepek{
