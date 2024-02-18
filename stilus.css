@@ -418,6 +418,7 @@ input{
 /*orokbefogadas*/
 .cicakFieldset{
     padding-left: 90px;
+    padding-top: 30px;
 }
 .kerdesek{
     padding-right: 90px;
@@ -472,6 +473,30 @@ input{
     padding-top: 15px;
     padding-bottom: 15px;
 }
+.bekuldveArticle h1{
+    padding-top: 80px;
+}
+.bekuldveArticle h2{
+    padding-bottom: 80px;
+}
+.regisztracio{
+    padding-right: 90px;
+}
+.orokbefogadasLakcim>div{
+    text-align: right;
+}
+.labelLeft{
+    text-align: left;
+    float: left;
+}
+.orokbefogadasLakcim{
+    padding-left: 50px;
+}
+.bekuldveArticle{
+    padding-top: 20px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
 /* TORESPONTOK */
 @media only screen and (max-width: 1000px){
     .orokbefogadasKepek{
@@ -480,11 +505,7 @@ input{
     }
     
 }
-.bekuldveArticle{
-    padding-top: 20px;
-    padding-left: 90px;
-    padding-right: 90px;
-}
+
 
 @media only screen and (max-width: 770px){
     body {
@@ -547,6 +568,12 @@ input{
 .skalaPenz{
     grid-template-columns: 1fr;
 }
+.orokbefogadasLakcim{
+    padding-left: 12px;
+}
+.orokbefogadasLakcim>div{
+    text-align: left;
+}
 } 
 
 @media only screen and (max-width: 545px){
@@ -560,6 +587,14 @@ input{
         display: grid;
         grid-template-columns: 1fr;
 }
+nav li{
+    display: grid;
+    place-items: center;
+    }
+    nav ul{
+    grid-template-columns: 1fr;
+    padding: 0%;
+    }
 }
   @media only screen and (max-width: 440px){
     body {
