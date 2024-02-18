@@ -425,6 +425,9 @@ input{
 .kerdesLabel{
     padding-bottom: 20px;
 }
+.kerdesLabel, .kerdesLegend{
+    font-size: 23px;
+}
 .cicakLegend{
     padding-bottom: 20px;
     padding-right: 90px;
