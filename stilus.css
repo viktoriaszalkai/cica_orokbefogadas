@@ -348,37 +348,35 @@ tr:nth-child(odd) {
 }
 
 /* REGISZTRACIO */
-.regisztracio{
+.regisztracio, .regisztracioGombok{
     
     padding: 20px;
     padding-left: 90px;
 }
-.regisztracioArticle, .orokbefogadasArticle{
+.area, .area2{
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    border: 0cap;
+    
+}
+p{
+    text-align: center;
+    font-size: larger;
+}
+.regisztracioArticle{
     background-color:#ffbec4 ;
     border-radius: 20px;
+   /*  margin: 0px; */
+    max-width: 800px;
+    margin: 5px;
+    padding: 5px;
 }
-.orokbefogadasArticle h2{
-    padding: 20px;
-    margin: 0;
-}
-.orokbefogadasArticle ul{
-    list-style-type: none;
-}
-.adatok_ul{
-    display: flex;
-
-}
-.adatok_ul>ul{
-    flex-direction: column;
-    flex: 0 0 50%;
-}
-
 .regisztracio2{
     text-align: center;
     background-color: #ffbec4;
 
 }
-.gombRegisztralas{
+.gombRegisztralas, .textarea{
     text-align: center;
     padding-bottom:40px;
     
@@ -389,6 +387,11 @@ tr:nth-child(odd) {
 input{
     border-radius: 8px;
     border: 0cap;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
+.number{
+    background-color: #ffbec400;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0);
 }
 
 /*urlap*/
@@ -443,10 +446,14 @@ input{
     align-self: center;
     margin: 0px;
   }
+  .regisztracioGombok{
+    padding-left: 250px;
+    gap: 20px;
+  }
 } 
 
 
-  @media only screen and (max-width: 420px){
+  @media only screen and (max-width: 440px){
     body {
         width: 100%;
     }
@@ -478,9 +485,39 @@ input{
     display: grid;
     place-items: center;
     }
+
     .regisztracio{
         place-items: center;
+        padding-left: 45px;
+    }
+    .regisztracioGombok{
+        place-items: center ;
         padding-left: 50px;
+    }
+    .area{
+        max-width: 85%;
+        width: 330px;
+    }
+    .area2{
+        max-width: 100%;
+        padding: 0px;
+        width: 330px;
+    }
+    .magadrolArea{
+        padding: 25px;
     }
   }
   
+  @media only screen and (max-width: 390px){
+    .regisztracio{
+        place-items: center;
+        padding-left: 25px;
+    }
+    .regisztracioGombok{
+        place-items: center ;
+        padding-left: 35px;
+    }
+    .area{
+        padding: 30px;
+    }
+  }

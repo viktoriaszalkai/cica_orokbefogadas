@@ -21,7 +21,7 @@
     <body>
         <main >
             <nav>
-                <ul>
+                <ul style="padding-top: 20px; margin-top: 16px; margin-bottom: 16px;">
                     <li><a href="index.html" class="kezdolapMenu">Kezdőlap</a></li>
                     <li><a href="galeria.html" class="cicainkMenu">Cicáink</a></li>
                     <li><a href="tippek.html" class="tippekMenu">Tippek</a></li>
@@ -29,33 +29,47 @@
                     <li><a href="regisztracio.html" class="regisztracioMenu">Regisztárció</a></li>
                 </ul>
             </nav>
-            <header>
+            <header class="regisztrácioHeader">
                 <div class="fejleckep"><img src="kepek/fejleckep.png" alt=""></div>
                 <div class="cim"><h1>CICAÖRÖM ÁLLATMENHELY</h1></div>
                 <h2 class="cim">Regisztráció</h2>
+                <p>Ha körülnéztél regisztálj, és indulhat is az örökbefogadás!</p>
             </header>
-            <article class="regisztracioArticle" >
+            <article class="regisztracioArticle row" >
                
-                <form action="orokbefogadas.html" method="get">
-                    <fieldset class="regisztracio row ">
+                <form action="#" method="get" style="padding: 0px;">
+                    <fieldset class="regisztracio row " style="margin: 5px;">
                         <div class="szemelyes col-md-6">
                             <div class="mb-3 mt-3">
                                 <label for="neve" style="width: 120px;" >Név:</label>
                                 <input type="text" id="neve" name="nev" size="30">
                             </div>
                             <div class="mb-3 mt-3">
+                                <label for="szuldatum" style="width: 130px;">Születési dátum:</label>
+                                <br>
+                                <input type="date" id="szuldatum" name="szuldatum" size="30" >
+                            </div>
+                            <div class="mb-3 mt-3">
                                 <label for="email" style="width: 120px;">E-mail cím:</label>
-                                <input type="text" id="email" name="emailcim" size="30">
+                                <input type="email" id="email" name="email" size="30">
                             </div>
                             <div class="mb-3 mt-3">
                                 <label for="telefon" style="width: 120px;">Telefonszám:</label>
-                                <input type="text" id="telefon" name="telefonszam" size="30">
+                                <input type="tel" id="telefon" name="telefon" size="30">
                             </div>
                         </div>
                         <div class="lakcim col-md-6">
                             <div class="mb-3 mt-3">
                                 <label for="orszag" style="width: 120px;">Ország:</label>
                                 <input type="text" id="orszag" name="orszaga" size="30">
+                            </div>
+                            <div class="mb-3 mt-3">
+                                <label for=irSzam" style="width: 120px;">Irányítószám:</label>
+                                <input type="text" id="irSzam" name="irSzam" size="30">
+                            </div>
+                            <div class="mb-3 mt-3">
+                                <label for=irSzam" style="width: 120px;">Irányítószám:</label>
+                                <input type="text" id="irSzam" name="irSzam" size="30">
                             </div>
                             <div class="mb-3 mt-3">
                                 <label for="varos" style="width: 120px;">Város:</label>
@@ -66,7 +80,48 @@
                                 <input type="text" id="utca" name="utcaja" size="30">
                             </div>
                         </div>
-                        </fieldset> 
+                        </fieldset>
+                        <div class="alja">
+                            <div class = "textarea col-md-12 row" style="justify-content: center; margin: 0px;">
+                                <div class="magadrolLabel col-md-12 ">
+                                    <label for="rolad">Szeretnénk megismerni! </label>
+                                </div>
+                                <div class="magadrolArea col-md-12" >
+                                    <textarea class="area" name="rolad" style="width: 500px; text-align: center; height: 150px; " placeholder="Mesélj magadról!"></textarea>
+                                </div>
+                            </div>
+                            <div class="regisztracioGombok col-md-12 row" style="margin: 0px;">
+                                <div class="allatokChb col-md-6 mb-3 mt-3">
+                                    <label for="kerdes">Van háziállatod?</label>
+                                    <br>
+                                    <input type="checkbox" id="cica" name="cica">
+                                    <label for="cica">cica</label>
+                                    <br>
+                                    <input type="checkbox" id="kutya" name="kutya">
+                                    <label for="kutya">kutya</label>
+                                    <br>
+                                    <input type="checkbox" id="nincs" name="nincs">
+                                    <label for="nincs">nincs</label>
+                                    <br>
+                                    <input type="checkbox" id="egyéb" name="egyéb">
+                                    <label for="egyéb">egyéb</label>
+                                    <br>
+                                    <br>
+                                    <textarea class="area2" name="egyeb" style="width: 250px; text-align: center; height: 30px; " placeholder="háziállatom.."></textarea>                                    
+                                </div>
+                                <div class="allatokRangeRadio col-md-6 mb-3 mt-3">
+                                    <label for="hanyDb">Hány háziállatod van?</label>
+                                    <br>
+                                    <input type="range" id="hanyDb" name="hanyDb" min="0" max="10" oninput="this.form.f_szam.value =this.value">
+                                    <input class="number" type="number" name="f_szam" size="6" oninput="this.form.filmek_szama.value =this.value" max="10" style="width: 40px;">
+                                    <br>
+                                    <br>
+                                    <label for="miert">MIért szeretnél örökbefogadni?</label>
+                                    <textarea class="area2" name="miert" style="width: 250px; text-align: center; height: 75px; " placeholder="segíteni szeretnék"></textarea>  
+
+                                </div>
+                            </div>
+                        </div>
                         <div class="gombRegisztralas">
                             <a href="orokbefogadas.html" onclick="adatokOutput()">Regisztráció</a>
                         </div> 
