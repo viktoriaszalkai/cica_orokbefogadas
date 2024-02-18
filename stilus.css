@@ -474,9 +474,16 @@ input{
     margin: 0px;
   }
   .regisztracioGombok{
-    padding-left: 250px;
+    padding-left: 200px;
     gap: 20px;
   }
+ input#szuldatum{
+    width: 311px;
+ }
+ label#szuldatum{
+    width: 120px;
+ }
+ 
 } 
 
 @media only screen and (max-width: 530px){
@@ -527,7 +534,7 @@ input{
     }
     .regisztracioGombok{
         place-items: center ;
-        padding-left: 50px;
+        padding: 50px;
     }
     .area{
         max-width: 85%;
@@ -538,9 +545,19 @@ input{
         padding: 0px;
         width: 330px;
     }
+    .area3, .magadrolArea{
+        text-align: center;
+    }
     .magadrolArea{
         padding: 25px;
     }
+    .textarea{
+        padding: 15px;
+    }
+    input#szuldatum{
+        width: 251px;
+     }
+  
   }
   
   @media only screen and (max-width: 390px){
