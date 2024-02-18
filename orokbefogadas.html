@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="hu">
     <head>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="icon" href="kepek/favicon.ico">
      <link rel="stylesheet" href="stilus.css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +17,7 @@
 		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		 <meta charset="UTF-8">
 		 <title>Cicaöröm Állatmenhely</title>
+         
     </head>
     <body>
         <main>
@@ -31,18 +37,40 @@
             </header>
             <article class="orokbefogadasArticle" >
                 <h2>Adatok:</h2>
-                <div class="adatok_ul">
-                    <ul>
-                        <li>Név: </li>
-                        <li>Email-cím: </li>
-                        <li>Telefonszám: </li>
-                    </ul>
-                    <ul>
-                        <li>Ország: </li>
-                        <li>Város: </li>
-                        <li>Utca, házszám: </li>
-                    </ul>
-                </div>
+                <form action="#" method="get">
+                    <fieldset class="regisztracio row ">
+                        <div class="szemelyes col-md-6">
+                            <div class="mb-3 mt-3">
+                                <label for="nevOutput" style="width: 120px;">Név:</label>
+                                <input type="text" id="nevOutput" name="neve" size="30">
+                            </div>
+                            <div class="mb-3 mt-3">
+                                <label for="emailOutput" style="width: 120px;">E-mail cím:</label>
+                                <input type="text" id="emailOutput" name="emaile" size="30">
+                            </div>
+                            <div class="mb-3 mt-3">
+                                <label for="telefonOutput" style="width: 120px;">Telefonszám:</label>
+                                <input type="text" id="telefonOutput" name="telefonja" size="30">
+                            </div>
+                        </div>
+                        <div class="lakcim col-md-6">
+                            <div class="mb-3 mt-3">
+                                <label for="orszagOutput" style="width: 120px;">Ország:</label>
+                                <input type="text" id="orszagOutput" name="orszaga" size="30">
+                            </div>
+                            <div class="mb-3 mt-3">
+                                <label for="varosOutput" style="width: 120px;">Város:</label>
+                                <input type="text" id="varosOutput" name="varosa" size="30">
+                            </div>
+                            <div class="mb-3 mt-3">
+                                <label for="utcaOutput" style="width: 120px;">Utca, házszám:</label>
+                                <input type="text" id="utcaOutput" name="utcaja" size="30">
+                            </div>
+                        </div>
+                        </fieldset> 
+                </form>
             </article>
+            <footer class="urlapFooter">© 2024 Szalkai Viktória, Roszkopf Adél</footer>  
         </main>
     </body>
+</html>
