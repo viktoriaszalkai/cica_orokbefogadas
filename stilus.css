@@ -158,7 +158,7 @@ footer img{
 
 }
 
-.kepek {
+.kepek, .orokbefogadasKepek {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
@@ -166,7 +166,10 @@ footer img{
     padding-right: 0px;
     max-width: 800px;
 }
-
+.orokbefogadasKepek{
+    gap: 5px;
+    padding-left: 0px;
+}
 .cica {
     width: 220px;
     height: 220px;
@@ -175,7 +178,19 @@ footer img{
     box-shadow: 0px 15px 20px rgba(0,0,0,0.4);
     border-radius: 20px;
 }
+.orokbefogadasCica {
+    height: 50px;
+    justify-content: center;
+    padding-right: 90px;
+}
 
+.orokbefogadasCica img{
+    height: 70%;
+    width: 30%;
+    border-radius: 10px;
+    float: right;
+    
+}
 .cica img {
     height: 100%;
     width: 100%;
@@ -363,7 +378,7 @@ p{
     text-align: center;
     font-size: larger;
 }
-.regisztracioArticle{
+.regisztracioArticle, .orokbefogadasArticle{
     background-color:#ffbec4 ;
     border-radius: 20px;
    /*  margin: 0px; */
@@ -400,7 +415,19 @@ input{
     padding-right: 10px;
 }
 
+/*orokbefogadas*/
+.cicakFieldset{
+    padding-left: 90px;
+}
+
+
 /* TORESPONTOK */
+@media only screen and (max-width: 1000px){
+    .orokbefogadasKepek{
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+    }
+}
 
 @media only screen and (max-width: 770px){
     body {
@@ -459,6 +486,14 @@ input{
  
 } 
 
+@media only screen and (max-width: 530px){
+    .orokbefogadasKepek{
+        grid-template-columns: 1fr;
+    }
+    .orokbefogadasKepek img{
+        height: 100%;
+    }
+}
 
   @media only screen and (max-width: 440px){
     body {
