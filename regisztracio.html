@@ -41,7 +41,7 @@
                     <fieldset class="regisztracio row " style="margin: 5px;">
                         <div class="szemelyes col-md-6">
                             <div class="mb-3 mt-3">
-                                <label for="neve" style="width: 120px;">Név:</label>
+                                <label for="neve" style="width: 120px;" >Név:</label>
                                 <input type="text" id="neve" name="nev" size="30">
                             </div>
                             <div class="szuldatum mb-3 mt-3">
@@ -60,7 +60,11 @@
                         <div class="lakcim col-md-6">
                             <div class="mb-3 mt-3">
                                 <label for="orszag" style="width: 120px;">Ország:</label>
-                                <input type="text" id="orszag" name="orszag" size="30">
+                                <input type="text" id="orszag" name="orszaga" size="30">
+                            </div>
+                            <div class="mb-3 mt-3">
+                                <label for=irSzam" style="width: 120px;">Irányítószám:</label>
+                                <input type="text" id="irSzam" name="irSzam" size="30">
                             </div>
                             <div class="mb-3 mt-3">
                                 <label for=irSzam" style="width: 120px;">Irányítószám:</label>
@@ -68,11 +72,11 @@
                             </div>
                             <div class="mb-3 mt-3">
                                 <label for="varos" style="width: 120px;">Város:</label>
-                                <input type="text" id="varos" name="varos" size="30">
+                                <input type="text" id="varos" name="varosa" size="30">
                             </div>
                             <div class="mb-3 mt-3">
                                 <label for="utca" style="width: 120px;">Utca, házszám:</label>
-                                <input type="text" id="utca" name="utca" size="30">
+                                <input type="text" id="utca" name="utcaja" size="30">
                             </div>
                         </div>
                         </fieldset>
@@ -121,10 +125,12 @@
                             </div>
                         </div>
                         <div class="gombRegisztralas">
-                            <a href="#">Regisztráció</a>
+                            <a href="orokbefogadas.html" onclick="adatokOutput()">Regisztráció</a>
                         </div> 
                 </form>
-            </article>
-            <footer>
 
-            </footer>
+            </article>
+            <footer class="urlapFooter">© 2024 Szalkai Viktória, Roszkopf Adél</footer>           
+        </main> 
+    </body>
+</html>
