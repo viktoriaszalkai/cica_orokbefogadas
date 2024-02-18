@@ -94,7 +94,7 @@ footer img{
     place-items: center;
     
 }
-.gombCicak a,.gombTippek a,.gombRolunk a, .gombRegisztralas a{
+.gombCicak a,.gombTippek a,.gombRolunk a, .gombRegisztralas a, .gombKuldes a{
     text-decoration: none;
     text-align: center;
     color:white;
@@ -104,7 +104,7 @@ footer img{
     padding-right: 30px;
     border-radius: 10px;
 }
-.gombCicak a:hover, .gombTippek a:hover, .gombRolunk a:hover, .gombRegisztralas a:hover{
+.gombCicak a:hover, .gombTippek a:hover, .gombRolunk a:hover, .gombRegisztralas a:hover, .gombKuldes a:hover{
     background-color: white;
     color: #ffbec4;
     border: 1px solid #ffbec4;
@@ -121,7 +121,7 @@ footer img{
 }
 
 /*box shadow*/
-.szovegCicak, .gombCicak, .gombTippek, .szovegTippek, .gombRolunk, .szovegRolunk, .gombCicak a, .gombTippek a, .gombRolunk a, .gombRegisztralas a{
+.szovegCicak, .gombCicak, .gombTippek, .szovegTippek, .gombRolunk, .szovegRolunk, .gombCicak a, .gombTippek a, .gombRolunk a, .gombRegisztralas a, .gombKuldes a{
     box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
 }
 
@@ -378,7 +378,7 @@ p{
     text-align: center;
     font-size: larger;
 }
-.regisztracioArticle, .orokbefogadasArticle{
+.regisztracioArticle, .orokbefogadasArticle, .bekuldveArticle{
     background-color:#ffbec4 ;
     border-radius: 20px;
    /*  margin: 0px; */
@@ -391,12 +391,12 @@ p{
     background-color: #ffbec4;
 
 }
-.gombRegisztralas, .textarea{
+.gombRegisztralas, .textarea, .gombKuldes{
     text-align: center;
     padding-bottom:40px;
     
 }
-.gombRegisztralas a{
+.gombRegisztralas a, .gombkuldes a{
     padding: 15px;
 }
 input{
@@ -455,13 +455,22 @@ input{
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
 }
 .skalaPenz{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
     padding-left: 90px;
     padding-right: 90px;
     text-align: right;
 }
 .rangePenz{
     box-shadow: none;
-    width: 81%;
+    width: 100%;
+}
+.gombKuldes{
+    padding-top: 40px;
+}
+.gombKuldes a{
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 /* TORESPONTOK */
 @media only screen and (max-width: 1000px){
@@ -469,6 +478,12 @@ input{
         grid-template-columns: 1fr 1fr;
         display: grid;
     }
+    
+}
+.bekuldveArticle{
+    padding-top: 20px;
+    padding-left: 90px;
+    padding-right: 90px;
 }
 
 @media only screen and (max-width: 770px){
@@ -526,6 +541,12 @@ input{
     width: 120px;
  }
  
+ .number{
+    width: 80px;
+}
+.skalaPenz{
+    grid-template-columns: 1fr;
+}
 } 
 
 @media only screen and (max-width: 545px){
@@ -539,7 +560,7 @@ input{
         display: grid;
         grid-template-columns: 1fr;
 }
-
+}
   @media only screen and (max-width: 440px){
     body {
         width: 100%;
@@ -617,4 +638,5 @@ input{
     .area{
         padding: 30px;
     }
+    
   }
