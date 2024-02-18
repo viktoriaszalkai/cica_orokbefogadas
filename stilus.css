@@ -189,7 +189,7 @@ footer img{
     width: 30%;
     border-radius: 10px;
     float: right;
-    
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
 }
 .cica img {
     height: 100%;
@@ -419,8 +419,50 @@ input{
 .cicakFieldset{
     padding-left: 90px;
 }
-
-
+.kerdesek{
+    padding-right: 90px;
+}
+.kerdesLabel{
+    padding-bottom: 20px;
+}
+.cicakLegend{
+    padding-bottom: 20px;
+    padding-right: 90px;
+}
+.skala{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 15px;
+}
+.skalaSzamok{
+    text-align: right;
+}
+.skalaKerdesekInput{
+    box-shadow: none;
+}
+.kerdesLegend{
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 20px;
+}
+.tulajdonsagok{
+    text-align: left;
+    padding-left: 90px;
+}
+.kerdesek .form-control{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
+.skalaPenz{
+    padding-left: 90px;
+    padding-right: 90px;
+    text-align: right;
+}
+.rangePenz{
+    box-shadow: none;
+    width: 81%;
+}
 /* TORESPONTOK */
 @media only screen and (max-width: 1000px){
     .orokbefogadasKepek{
@@ -486,13 +528,16 @@ input{
  
 } 
 
-@media only screen and (max-width: 530px){
+@media only screen and (max-width: 545px){
     .orokbefogadasKepek{
         grid-template-columns: 1fr;
     }
     .orokbefogadasKepek img{
         height: 100%;
     }
+    .skala{
+        display: grid;
+        grid-template-columns: 1fr;
 }
 
   @media only screen and (max-width: 440px){
