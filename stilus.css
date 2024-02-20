@@ -99,7 +99,7 @@ footer img{
     place-items: center;
     
 }
-.gombCicak a,.gombTippek a,.gombRolunk a, .gombRegisztralas a, .gombKuldes a{
+.gombCicak a,.gombTippek a,.gombRolunk a, .gombRegisztralas a, .gombKuldes a, .gombCsapatmunka a{
     text-decoration: none;
     text-align: center;
     color:white;
@@ -109,7 +109,7 @@ footer img{
     padding-right: 30px;
     border-radius: 10px;
 }
-.gombCicak a:hover, .gombTippek a:hover, .gombRolunk a:hover, .gombRegisztralas a:hover, .gombKuldes a:hover{
+.gombCicak a:hover, .gombTippek a:hover, .gombRolunk a:hover, .gombRegisztralas a:hover, .gombKuldes a:hover, .gombCsapatmunka a:hover{
     background-color: white;
     color: #ffbec4;
     border: 1px solid #ffbec4;
@@ -126,7 +126,7 @@ footer img{
 }
 
 /*box shadow*/
-.szovegCicak, .gombCicak, .gombTippek, .szovegTippek, .gombRolunk, .szovegRolunk, .gombCicak a, .gombTippek a, .gombRolunk a, .gombRegisztralas a, .gombKuldes a{
+.szovegCicak, .gombCicak, .gombTippek, .szovegTippek, .gombRolunk, .szovegRolunk, .gombCicak a, .gombTippek a, .gombRolunk a, .gombRegisztralas a, .gombKuldes a, .gombCsapatmunka a{
     box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
 }
 
@@ -397,7 +397,7 @@ tr:nth-child(odd) {
     padding-bottom:40px;
     
 }
-.gombRegisztralas a, .gombkuldes a{
+.gombRegisztralas a, .gombkuldes a, .gombCsapatmunka{
     padding: 15px;
 }
 input{
@@ -504,6 +504,15 @@ input{
 }
 .regisztracioP{
     text-align: center;
+}
+.csapatmunkaKep{
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+.gombCsapatmunka{
+    margin-bottom: 20px;
+    text-align: right;
 }
 /* TORESPONTOK */
 @media only screen and (max-width: 1000px){
